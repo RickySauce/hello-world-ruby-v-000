@@ -3,6 +3,5 @@
 require './lib/beer_list'
 
 BeerList::CLI.new.call
-binding.pry
 
 #Scraper.new.create_beers
