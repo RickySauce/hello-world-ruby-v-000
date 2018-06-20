@@ -25,8 +25,7 @@ class BeerList::CLI
         when "1"
           self.list_beer_abv
           puts ""
-          puts "WOULD YOU LIKE TO SEE MORE LISTS?"
-          puts "ENTER 'MAIN' TO DO SO, OTHERWISE TYPE 'EXIT'"
+          self.more_options
           answer_1 = gets.strip.downcase
           case answer_1
           when "main"
@@ -37,11 +36,7 @@ class BeerList::CLI
         when "2"
           self.list_beer_ratings
           puts ""
-          puts "WOULD YOU LIKE TO SEE MORE LISTS?"
-          puts "ENTER 'MAIN' TO DO SO, OTHERWISE TYPE 'EXIT'"
-          puts ""
-          puts "WOULD YOU LIKE TO SEE MORE LISTS?"
-          puts "ENTER 'MAIN' TO DO SO, OTHERWISE TYPE 'EXIT'"
+          self.more_options
           answer_1 = gets.strip.downcase
           case answer_1
           when "main"
@@ -64,6 +59,11 @@ class BeerList::CLI
     puts "OTHERWISE TYPE 'MAIN' TO RETURN TO THE MAIN MENU OR 'EXIT' TO LEAVE"
     puts "1. SORT BY ABV"
     puts "2. SORT BY TOTAL REVIEWS"
+  end
+
+  def more_options
+    puts "WOULD YOU LIKE TO SEE MORE LISTS?"
+    puts "ENTER 'MAIN' TO DO SO, OTHERWISE TYPE 'EXIT'"
   end
 
 
