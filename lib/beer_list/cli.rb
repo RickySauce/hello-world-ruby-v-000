@@ -31,6 +31,15 @@ class BeerList::CLI
       end
     end
   end
+  
+  def sorting_method
+    puts "PLEASE SELECT THE NUMBER THAT CORRESPONDS WITH THE SORTING METHOD OF CHOICE"
+    puts "OTHERWISE ENTER 'EXIT' TO LEAVE OR 'MAIN' TO RETURN TO THE MAIN MENU"
+    puts "1. SORT BY ABV"
+    puts "2. SORT BY BA-SCORE"
+    puts "3. SORT BY TOTAL REVIEWS"
+  end
+
 
 
    def list_regions
@@ -109,15 +118,7 @@ class BeerList::CLI
       puts "#{index + 1}. #{beer.name} #{beer.ratings}"
      end
    end
-
-   def sorting_method
-     puts "PLEASE SELECT THE NUMBER THAT CORRESPONDS WITH THE SORTING METHOD OF CHOICE"
-     puts "OTHERWISE ENTER 'EXIT' TO LEAVE OR 'MAIN' TO RETURN TO THE MAIN MENU"
-     puts "1. SORT BY ABV"
-     puts "2. SORT BY BA-SCORE"
-     puts "3. SORT BY TOTAL REVIEWS"
-   end
-
+   
 end
 
 
