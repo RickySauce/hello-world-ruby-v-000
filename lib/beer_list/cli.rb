@@ -14,19 +14,19 @@ class BeerList::CLI
     puts "2. SEPERATE BETWEEN ALES AND LAGERS"
     puts "3. CHOOSE BY SUBSTYLE"
     puts "OTHERWISE, ENTER 'EXIT'"
-    answer = gets.strip.downcase
+    answer = self.input
       case answer
       when "1"
         self.list_beer_score
         puts ""
         self.sorting_method
-        answer_1 = gets.strip.downcase
+        answer_1 = self.input
         case answer_1
         when "1"
           self.list_beer_abv
           puts ""
           self.more_options
-          answer_1 = gets.strip.downcase
+          answer_1 = self.input
           case answer_1
           when "main"
             menu
@@ -38,7 +38,7 @@ class BeerList::CLI
           self.list_beer_ratings
           puts ""
           self.more_options
-          answer_1 = gets.strip.downcase
+          answer_1 = self.input
           case answer_1
           when "main"
             menu
@@ -68,6 +68,9 @@ class BeerList::CLI
     puts "ENTER 'MAIN' TO DO SO, OTHERWISE TYPE 'EXIT'"
   end
 
+  def input
+    gets.strip.downcase
+  end
 
 
    def list_regions
