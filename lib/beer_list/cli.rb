@@ -48,7 +48,7 @@ class BeerList::CLI
           end
         when "main"
           menu
-        else "exit"
+        else 
           puts "GOODBYE"
           exit
       end
