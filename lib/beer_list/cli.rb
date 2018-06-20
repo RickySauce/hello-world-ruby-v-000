@@ -24,6 +24,9 @@ class BeerList::CLI
         case answer_1
         when "1"
           self.list_beer_abv
+          puts ""
+          puts "WOULD YOU LIKE TO SEE MORE LISTS?"
+          puts "ENTER 'MAIN' TO DO SO, OTHERWISE TYPE 'EXIT'"
         when "2"
           self.list_beer_ratings
         when "main"
