@@ -14,13 +14,13 @@ class BeerList::CLI
     puts "2. SEPERATE BETWEEN ALES AND LAGERS"
     puts "3. CHOOSE BY SUBSTYLE"
     puts "OTHERWISE, ENTER 'EXIT'"
-    answer = gets.strip
+    answer = gets.strip.downcase
       case answer
       when "1"
         self.list_beer_score
         break
         self.sorting_method
-        answer_1 = gets.strip
+        answer_1 = gets.strip.downcase
         case answer_1
         when "1"
           self.list_beer_abv
