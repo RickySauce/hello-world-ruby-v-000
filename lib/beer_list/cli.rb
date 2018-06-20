@@ -28,6 +28,8 @@ class BeerList::CLI
           self.list_beer_ratings
         when "main"
           menu
+        when "back"
+          answer
         else 
           exit 
       end
