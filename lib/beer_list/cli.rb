@@ -17,13 +17,16 @@ class BeerList::CLI
     answer = gets.strip
       case answer
       when "1"
-        self.sorting_method
+        self.list_beer_score
+        puts "WOULD YOU LIKE TO FURTHER SORT?"
+        puts "IF SO SELECT THE NUMBER THE CORRESPONDS WITH YOUR SORTING METHODS OF CHOICE"
+        puts "OTHERWISE TYPE 'MAIN' TO RETURN TO THE MAIN MENU OR 'EXIT' TO LEAVE"
         answer_1 = gets.strip
         case answer_1
         when "1"
           self.list_beer_abv
         when "2"
-          self.list_beer_score
+          
         when "3"
           self.list_beer_ratings
         when "main"
