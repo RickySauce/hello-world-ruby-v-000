@@ -28,10 +28,12 @@ class BeerList::CLI
           self.list_beer_ratings
         when "main"
           menu
+        else 
+          exit 
       end
     end
   end
-  
+
   def sorting_method
     puts "PLEASE SELECT THE NUMBER THAT CORRESPONDS WITH THE SORTING METHOD OF CHOICE"
     puts "OTHERWISE ENTER 'EXIT' TO LEAVE OR 'MAIN' TO RETURN TO THE MAIN MENU"
@@ -118,7 +120,7 @@ class BeerList::CLI
       puts "#{index + 1}. #{beer.name} #{beer.ratings}"
      end
    end
-   
+
 end
 
 
