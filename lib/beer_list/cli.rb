@@ -18,6 +18,7 @@ class BeerList::CLI
       case answer
       when "1"
         self.list_beer_score
+        break
         self.sorting_method
         answer_1 = gets.strip
         case answer_1
