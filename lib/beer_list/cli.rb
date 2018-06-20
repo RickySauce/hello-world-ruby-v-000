@@ -21,13 +21,12 @@ class BeerList::CLI
         puts "WOULD YOU LIKE TO FURTHER SORT?"
         puts "IF SO SELECT THE NUMBER THE CORRESPONDS WITH YOUR SORTING METHODS OF CHOICE"
         puts "OTHERWISE TYPE 'MAIN' TO RETURN TO THE MAIN MENU OR 'EXIT' TO LEAVE"
+        puts " "
         answer_1 = gets.strip
         case answer_1
         when "1"
           self.list_beer_abv
         when "2"
-          
-        when "3"
           self.list_beer_ratings
         when "main"
           menu
@@ -39,11 +38,11 @@ class BeerList::CLI
   end
 
   def sorting_method
-    puts "PLEASE SELECT THE NUMBER THAT CORRESPONDS WITH THE SORTING METHOD OF CHOICE"
-    puts "OTHERWISE ENTER 'EXIT' TO LEAVE OR 'MAIN' TO RETURN TO THE MAIN MENU"
+    puts "WOULD YOU LIKE TO FURTHER SORT?"
+    puts "IF SO SELECT THE NUMBER THE CORRESPONDS WITH YOUR SORTING METHODS OF CHOICE"
+    puts "OTHERWISE TYPE 'MAIN' TO RETURN TO THE MAIN MENU OR 'EXIT' TO LEAVE"
     puts "1. SORT BY ABV"
-    puts "2. SORT BY BA-SCORE"
-    puts "3. SORT BY TOTAL REVIEWS"
+    puts "2. SORT BY TOTAL REVIEWS"
   end
 
 
