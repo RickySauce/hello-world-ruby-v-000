@@ -30,8 +30,9 @@ class BeerList::CLI
           menu
         when "back"
           answer
-        else 
-          exit 
+        else
+          puts "GOODBYE"
+          exit
       end
     end
   end
