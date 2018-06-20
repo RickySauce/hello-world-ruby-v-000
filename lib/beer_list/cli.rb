@@ -31,8 +31,9 @@ class BeerList::CLI
           case answer_1
           when "main"
             menu
-          else 
-            exit 
+          else
+            exit
+          end
         when "2"
           self.list_beer_ratings
           puts ""
@@ -45,8 +46,9 @@ class BeerList::CLI
           case answer_1
           when "main"
             menu
-          else 
-            exit 
+          else
+            exit
+          end
         when "main"
           menu
         else
