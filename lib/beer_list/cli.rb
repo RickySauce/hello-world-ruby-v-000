@@ -30,7 +30,7 @@ class BeerList::CLI
           case answer_1
           when "main"
             menu
-          else "exit"
+          else
             puts "GOODBYE"
             exit
           end
