@@ -34,8 +34,6 @@ class BeerList::CLI
           menu
         when "exit"
           exit? == true
-        when "back"
-          answer
         end
       end
     end
