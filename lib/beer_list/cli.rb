@@ -31,6 +31,7 @@ class BeerList::CLI
           when "main"
             menu
           else
+            puts "GOODBYE"
             exit
           end
         when "2"
@@ -42,6 +43,7 @@ class BeerList::CLI
           when "main"
             menu
           else
+            puts "GOODBYE"
             exit
           end
         when "main"
