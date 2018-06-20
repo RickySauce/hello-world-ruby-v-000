@@ -59,6 +59,7 @@ class Scraper
       beer_list.clear
         doc = Nokogiri::HTML(open("https://www.beeradvocate.com#{sub_style.url}?sort=avgD"))
         doc.css("tr").drop(3).each do |info|
+          binding.pry
           beer_list << {
             :name => info.css("td a b").text,
             :url => info.css("td a").attribute('href').value,
