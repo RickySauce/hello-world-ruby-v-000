@@ -9,6 +9,7 @@ class Scraper
     ale = ParentStyle.new("Ale")
   end
 
+=begin
   def create_regions
     self.get_style_page.css("table td b").each do |region_name|
       new_region_name = region_name.text
@@ -21,7 +22,7 @@ class Scraper
       Region.new(new_region_name) unless Region.all.any? {|region| region.name == new_region_name}
     end
   end
-#
+=end
 
   def create_sub_styles
     self.create_parent_styles
