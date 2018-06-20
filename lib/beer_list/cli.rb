@@ -29,7 +29,7 @@ class BeerList::CLI
         when "main"
           menu
         when "back"
-           case answer
+          return answer
         else
           puts "GOODBYE"
           exit
