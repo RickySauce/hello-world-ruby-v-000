@@ -14,7 +14,7 @@ class BeerList::CLI
     puts "2. SEPERATE BETWEEN ALES AND LAGERS"
     puts "3. CHOOSE BY SUBSTYLE"
     puts "OTHERWISE, ENTER 'EXIT'"
-    answer = input
+    answer = self.input
       case answer
       when "1"
         self.list_beer_score
@@ -30,7 +30,7 @@ class BeerList::CLI
           case answer_1
           when "main"
             menu
-          else
+          else "exit"
             puts "GOODBYE"
             exit
           end
