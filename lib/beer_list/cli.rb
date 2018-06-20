@@ -27,8 +27,26 @@ class BeerList::CLI
           puts ""
           puts "WOULD YOU LIKE TO SEE MORE LISTS?"
           puts "ENTER 'MAIN' TO DO SO, OTHERWISE TYPE 'EXIT'"
+          answer_1 = gets.strip.downcase
+          case answer_1
+          when "main"
+            menu
+          else 
+            exit 
         when "2"
           self.list_beer_ratings
+          puts ""
+          puts "WOULD YOU LIKE TO SEE MORE LISTS?"
+          puts "ENTER 'MAIN' TO DO SO, OTHERWISE TYPE 'EXIT'"
+          puts ""
+          puts "WOULD YOU LIKE TO SEE MORE LISTS?"
+          puts "ENTER 'MAIN' TO DO SO, OTHERWISE TYPE 'EXIT'"
+          answer_1 = gets.strip.downcase
+          case answer_1
+          when "main"
+            menu
+          else 
+            exit 
         when "main"
           menu
         else
