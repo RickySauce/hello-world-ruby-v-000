@@ -18,10 +18,7 @@ class BeerList::CLI
       case answer
       when "1"
         self.list_beer_score
-        puts "WOULD YOU LIKE TO FURTHER SORT?"
-        puts "IF SO SELECT THE NUMBER THE CORRESPONDS WITH YOUR SORTING METHODS OF CHOICE"
-        puts "OTHERWISE TYPE 'MAIN' TO RETURN TO THE MAIN MENU OR 'EXIT' TO LEAVE"
-        puts " "
+        self.sorting_method
         answer_1 = gets.strip
         case answer_1
         when "1"
